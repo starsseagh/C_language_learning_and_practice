@@ -1,7 +1,7 @@
 /*
- * 在上面有关折半查找的例子中，while循环语句内共执行了两次测试，其实只要
- * 一次就够（代价是将更多的测试在循环外执行）。重写该函数，使得在循环内部
- * 只执行一次测试。比较两种版本函数的运行时间。
+ * Our binary search makes two tests inside the loop, when one would suffice 
+ * (at the price of more tests outside). Write a version with only one test 
+ * inside the loop and measure the difference in run-time.
  */
 #include <stdio.h>
 #include <time.h>

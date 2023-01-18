@@ -1,8 +1,8 @@
 /*
- * 编写一个函数escape(s, t),将字符串t复制到字符串s中，并在复制过程中将
- * 换行符、制表符等不可见字符分别转换为\n、\t等相应的可见的转义字符序列。
- * 要求使用switch语句。再编写一个具有相反功能的函数，在复制过程中将转义
- * 字符序列转换为实际字符。
+ * Write a function escape(s,t) that converts characters like newline 
+ * and tab into visible escape sequences like \n and \t as it copies 
+ * the string t to s . Use a switch . Write a function for the other 
+ * direction as well, converting escape sequences into the real characters.
  */
 #include <stdio.h>
 
