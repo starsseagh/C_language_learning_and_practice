@@ -1,27 +1,16 @@
-# 比特-C语言零基础教程
-
-## 一、第一个C语言项目
-
-```c
 #include <stdio.h>
 
 // 写代码
-// 首先写出主函数（main函数）
+// 写出主函数（main函数）
 // 如何执行？ - C语言是从主函数的第一行开始执行的
 // 所以C语言代码中得有main函数-入口
 
-int main()
-{
-    /* code */
-    printf("比特");
-    return 0;
-}
-```
-
-## 二、初识数据类型
-
-```c
-#include <stdio.h>
+// int main()
+// {
+//     /* code */
+//     printf("比特");
+//     return 0;
+// }
 
 // sizeof()返回对象的长度（字节）
 int main()
@@ -34,4 +23,3 @@ int main()
     printf("%d\n", sizeof(float));
     printf("%d\n", sizeof(double));
 }
-```
