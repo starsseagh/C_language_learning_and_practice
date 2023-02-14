@@ -35,3 +35,24 @@ int main()
     printf("%d\n", sizeof(double));
 }
 ```
+
+## 三、初识常量和变量
+
+变量的分类：  
+局部变量  
+全局变量
+
+```c
+// scanf函数是输入函数
+int main()
+{
+    int a = 0;
+    int b = 0;
+    int sum = 0;
+    scanf("%d %d", &a, &b);
+    sum = a + b;
+    printf("sum = %d\n", sum);
+
+    return 0;
+}
+```
