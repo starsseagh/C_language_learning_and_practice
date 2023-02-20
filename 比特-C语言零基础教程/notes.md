@@ -66,3 +66,60 @@ int main()
 - 生命周期：变量的创建和销毁之间的时间段
   - 局部变量的生命周期：进入局部范围生命开始，出局部范围生命结束
   - 全局变量的声明周期：整个程序的生命周期
+
+## 五、常量
+
+```c
+int main()
+{
+    // 1.字面常量
+    3.14;
+
+    // 2.const修饰的常变量
+    int num = 10;    // 变量
+    num = 20;
+    printf("num = %d\n", num);  // 20
+    const int num = 10;   // num就是常变量 - 具有常属性（不能被改变）
+    // num = 20;    // 报错
+    const int n = 10;
+    // int arr[n] = {0};   // 报错，常变量本质是变量。
+
+    // 3.#define 定义的标识符常量
+    #define MAX = 1000
+
+    // 4.枚举常量
+    // 可以一一列举的常量
+    enum Sex
+    {
+        MALE,
+        FEMALE,
+        SECRET
+    }
+    enum Sex s = MALE;    // 只能从三个中取一个
+
+  return 0;
+}
+```
+
+## 六、字符串
+
+```c
+int main()
+{
+    // 字符串再结尾的位置隐藏了一个“0”结束标志
+    // char arr[] = "hello";
+
+    char arr1[] = "abc";
+    char arr2[] = {'a', 'b', 'c'};
+
+    // 求字符串的长度
+    printf("%d\n", strlen(arr1));   // 3
+    printf("%d\n", strlen(arr2));   // 未知
+
+    printf("%s\n", arr1);
+    printf("%s\n", arr2);   // 打印效果不一样
+
+    
+    return 0;
+}
+```
