@@ -60,28 +60,36 @@
 //     return 0;
 // }
 
-int main()
-{
-    // 10*4 = 40
-    // sizeof是一个单目操作符，不是函数，可以计算类型和变量的长度
-    int arr[10] = {0};
-    printf("%d\n", sizeof(arr));    // 40，计算的是数组的总大小，单位是字节
+// int main()
+// {
+//     // 10*4 = 40
+//     // sizeof是一个单目操作符，不是函数，可以计算类型和变量的长度
+//     int arr[10] = {0};
+//     printf("%d\n", sizeof(arr));    // 40，计算的是数组的总大小，单位是字节
 
-    int sz = sizeof(arr) / sizeof(arr[0]);
-    printf("%d\n", sz);
+//     int sz = sizeof(arr) / sizeof(arr[0]);
+//     printf("%d\n", sz);
 
-    // ~按位取反
-    printf("%d\n", ~0);      // -1,整数在内存中存储的是补码
+//     // ~按位取反
+//     printf("%d\n", ~0);      // -1,整数在内存中存储的是补码
 
-    int a = 0;
-    int b = 3;
-    int c = 5;
+//     int a = 0;
+//     int b = 3;
+//     int c = 5;
 
-    int d = (a = b + 2, c = a -4, b = c + 2);
-    // 逗号表达式，是从左向右依次计算的
-    // 整个表达式的结果是最后一个表达式的结果
+//     int d = (a = b + 2, c = a -4, b = c + 2);
+//     // 逗号表达式，是从左向右依次计算的
+//     // 整个表达式的结果是最后一个表达式的结果
 
-    printf("%d\n", d);
+//     printf("%d\n", d);
 
-    return 0;
-}
+//     return 0;
+// }
+
+// int main() 
+// {
+//     // 大量频繁被使用的数据，放在寄存器中
+//     register int i = 7;     // 建议i存入寄存器里  
+    
+//     return 0;
+// }
