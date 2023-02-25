@@ -1,6 +1,6 @@
 # 比特-C语言零基础教程
 
-## 一、第一个C语言项目
+## 第一个C语言项目
 
 ```c
 #include <stdio.h>
@@ -18,7 +18,7 @@ int main()
 }
 ```
 
-## 二、初识数据类型
+## 初识数据类型
 
 ```c
 #include <stdio.h>
@@ -36,7 +36,7 @@ int main()
 }
 ```
 
-## 三、初识常量和变量
+## 初识常量和变量
 
 变量的分类：  
 局部变量  
@@ -57,7 +57,7 @@ int main()
 }
 ```
 
-## 四、初识变量的作用域和生命周期
+## 初识变量的作用域和生命周期
 
 - 作用域
   - 局部变量的作用域：就是变量所在的局部范围
@@ -67,7 +67,7 @@ int main()
   - 局部变量的生命周期：进入局部范围生命开始，出局部范围生命结束
   - 全局变量的声明周期：整个程序的生命周期
 
-## 五、常量
+## 常量
 
 ```c
 int main()
@@ -101,7 +101,7 @@ int main()
 }
 ```
 
-## 六、字符串
+## 字符串
 
 ```c
 int main()
@@ -124,7 +124,7 @@ int main()
 }
 ```
 
-## 七、转义字符
+## 转义字符
 
 ```c
 int main()
@@ -139,7 +139,7 @@ int main()
 }
 ```
 
-## 八、注释
+## 注释
 
 注释用来解释复杂代码。
 
@@ -156,7 +156,7 @@ int main()
 }
 ```
 
-## 九、关键字
+## 关键字
 
 static
 
@@ -172,4 +172,65 @@ static
 - 修饰函数
   - static修饰函数，与全局变量类似。
 
-## 十、指针
+## 指针
+
+```c
+int main()
+{
+    int a = 10;     // a在内存中要分配空间的 - 4个字节
+    printf("%p\n", &a);     // %p 专门用来打印地址的
+
+    int* pa = &a;       // pa是用来存放地址的，在C语言中pa叫是指针变量
+    printf("%p\n", pa); 
+    // *说明pa是指针变量
+    // int说明pa执行的对象是int类型的
+
+    *pa = 20;       // * 解引用操作符，通过地址找到a
+    printf("%d\n", a);
+
+    printf("%d\n", sizeof(char*));
+    printf("%d\n", sizeof(short*));
+    printf("%d\n", sizeof(int*));
+    printf("%d\n", sizeof(long*));
+    printf("%d\n", sizeof(long long*));
+    printf("%d\n", sizeof(float*));
+    printf("%d\n", sizeof(double*));
+
+    return 0;
+}
+```
+
+## 结构体
+
+```c
+// 结构体可以让C语言创建新的类型出来
+// 创建一个学生类型
+struct Stu
+{
+    char name[20];  // 成员变量
+    int age;
+    double score;
+};
+
+// 创建一个书的类型
+struct Book
+{
+    char name[20];
+    float price;
+    char id[30];
+};
+
+
+int main()
+{
+    struct Stu s = {"张三", 20, 85.5};  // 结构体的创建和初始化
+    printf("1: %s %d %lf\n", s.name, s.age, s.score);  //结构体变量.成员变量
+
+    struct Stu * ps = &s;
+    printf("2: %s %d %lf\n", (*ps).name, (*ps).age, (*ps).score);
+
+    printf("3: %s %d %lf\n", ps->name, ps->age, ps->score); // 结构体指针->成员变量名
+
+    return 0;
+}
+```
