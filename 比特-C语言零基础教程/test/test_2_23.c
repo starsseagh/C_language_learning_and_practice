@@ -1,4 +1,4 @@
-# include<stdio.h>
+#include <stdio.h>
 
 typedef unsigned int u_int;
 
@@ -23,7 +23,7 @@ typedef unsigned int u_int;
 //     {
 //         test();
 //     }
-    
+
 //     return 0;
 // }
 
@@ -45,7 +45,7 @@ typedef unsigned int u_int;
 //     printf("%p\n", &a);     // %p 专门用来打印地址的
 
 //     int* pa = &a;       // pa是用来存放地址的，在C语言中pa叫是指针变量
-//     printf("%p\n", pa); 
+//     printf("%p\n", pa);
 //     // *说明pa是指针变量
 //     // int说明pa执行的对象是int类型的
 
@@ -65,31 +65,43 @@ typedef unsigned int u_int;
 
 // 结构体可以让C语言创建新的类型出来
 // 创建一个学生类型
-struct Stu
-{
-    char name[20];  // 成员变量
-    int age;
-    double score;
-};
+// struct Stu
+// {
+//     char name[20];  // 成员变量
+//     int age;
+//     double score;
+// };
 
 // 创建一个书的类型
-struct Book
-{
-    char name[20];
-    float price;
-    char id[30];
-};
+// struct Book
+// {
+//     char name[20];
+//     float price;
+//     char id[30];
+// };
 
+// int main()
+// {
+//     struct Stu s = {"张三", 20, 85.5};  // 结构体的创建和初始化
+//     printf("1: %s %d %lf\n", s.name, s.age, s.score);  //结构体变量.成员变量
+
+//     struct Stu * ps = &s;
+//     printf("2: %s %d %lf\n", (*ps).name, (*ps).age, (*ps).score);
+
+//     printf("3: %s %d %lf\n", ps->name, ps->age, ps->score); // 结构体指针->成员变量名
+
+//     return 0;
+// }
 
 int main()
 {
-    struct Stu s = {"张三", 20, 85.5};  // 结构体的创建和初始化
-    printf("1: %s %d %lf\n", s.name, s.age, s.score);  //结构体变量.成员变量
-
-    struct Stu * ps = &s;
-    printf("2: %s %d %lf\n", (*ps).name, (*ps).age, (*ps).score);
-
-    printf("3: %s %d %lf\n", ps->name, ps->age, ps->score); // 结构体指针->成员变量名
+    for (int i = 0; i < 101; i++)
+    {
+        if (i % 2 == 1)
+        {
+            printf("%d ", i);
+        }
+    }
 
     return 0;
 }
