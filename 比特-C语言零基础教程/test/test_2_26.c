@@ -36,27 +36,27 @@
 // }
 
 /* getchar和scanf输入函数从缓冲区读取 */
-int main()
-{
-    char password[20] = {0};
-    printf("请输入密码:>");
-    scanf("%s", password);  // 数组的数组名本身是地址
-    printf("请确认密码(Y/N):>");
-    // 清理缓冲区
-    // getchar();  // 处理缓冲区中scanf没有拿走的'\n'
-    // 清理缓冲区中多余字符
-    int tmp = getchar();
-    while ((tmp = getchar()) != '\n');
+// int main()
+// {
+//     char password[20] = {0};
+//     printf("请输入密码:>");
+//     scanf("%s", password);  // 数组的数组名本身是地址
+//     printf("请确认密码(Y/N):>");
+//     // 清理缓冲区
+//     // getchar();  // 处理缓冲区中scanf没有拿走的'\n'
+//     // 清理缓冲区中多余字符
+//     int tmp = getchar();
+//     while ((tmp = getchar()) != '\n');
     
-    int ch = getchar();
-    if (ch == 'Y')
-    {
-        printf("确认成功\n");
-    }
-    else
-    {
-        printf("确认失败\n");
-    } 
+//     int ch = getchar();
+//     if (ch == 'Y')
+//     {
+//         printf("确认成功\n");
+//     }
+//     else
+//     {
+//         printf("确认失败\n");
+//     } 
 
-    return 0;
-}
+//     return 0;
+// }
