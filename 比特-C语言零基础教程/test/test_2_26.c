@@ -60,3 +60,42 @@
 
 //     return 0;
 // }
+
+int main()
+{
+    // int i = 1;
+    // do
+    // {
+    //     printf("%d ", i);
+    //     i++;    
+    // } while (i <= 10);
+
+    // int n = 0;
+    int i = 0;
+    int pow = 1;
+    int sum = 0;
+    // scanf("%d", &n);
+
+    // for (n = 1; n <= 10; n++)
+    // {
+    //     pow = 1;    // 计算n的阶乘之前，把ret初始为1
+    //     for (i = 1; i <= n; i++)
+    //     {
+    //         pow *= i;
+    //     }
+    //     sum += pow;
+    // }
+
+    for ( i = 1; i <= 10; i++)
+    {
+        pow *= i;
+        sum += pow;
+    }
+    
+    
+
+    
+    printf("%d\n", sum);
+    
+    return 0;
+}
