@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="add.c" />
     <ClCompile Include="test_3_11.c" />
+    <ClCompile Include="test_3_12.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="add.h" />
