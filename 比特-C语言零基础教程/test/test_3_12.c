@@ -3,10 +3,6 @@
 
 #include <stdio.h>
 
-// 1.不能死递归，都有跳出条件，每次递归逼近跳出条件
-// 2.递归的层次不能太深
-// https://stackoverflow.com/	程序员的知乎
-
 void print(unsigned int n)
 {
 	if (n > 9)
